@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Stone Park</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap"
+        rel="stylesheet">
+    <!-- Redirect after 3 seconds -->
+    <meta http-equiv="refresh" content="3;url=brochure.pdf">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white max-w-lg w-full p-8 rounded-2xl shadow-xl text-center">
+        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+
+        <h1 class="text-3xl font-bold text-slate-900 mb-4">Thank You!</h1>
+        <p class="text-slate-600 text-lg mb-8">
+            Your interest has been registered. We are redirecting you to the brochure now...
+        </p>
+
+        <p class="text-sm text-slate-400">
+            If you are not redirected automatically, <a href="brochure.pdf"
+                class="text-amber-600 font-bold hover:underline">click here</a>.
+        </p>
+    </div>
+
+    <script>
+        // Fallback JavaScript redirect
+        setTimeout(function () {
+            window.location.href = 'brochure.pdf';
+        }, 3000);
+    </script>
+</body>
+
+</html>
