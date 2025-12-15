@@ -1,9 +1,8 @@
 import { PropertyDetails, PaymentItem } from './types';
 
 // Extracted from the image
+// Extracted from the image
 const INSTALLMENT_SCHEDULE: PaymentItem[] = [
-  { date: '23-Jul-2025', amount: 404000 },
-  { date: '23-Oct-2025', amount: 404000 },
   { date: '23-Jan-2026', amount: 822750 },
   { date: '23-Apr-2026', amount: 404000 },
   { date: '23-Jul-2026', amount: 404000 },
@@ -34,10 +33,10 @@ const MAINTENANCE_SCHEDULE: PaymentItem[] = [
 ];
 
 // Calculated totals
-const TOTAL_REMAINING = INSTALLMENT_SCHEDULE.reduce((sum, item) => sum + item.amount, 0); // 12,208,500
+const TOTAL_REMAINING = INSTALLMENT_SCHEDULE.reduce((sum, item) => sum + item.amount, 0); // 11,400,500
 const TOTAL_MAINTENANCE = MAINTENANCE_SCHEDULE.reduce((sum, item) => sum + item.amount, 0); // 1,256,800
-const DOWN_PAYMENT = 6500000;
-const TOTAL_PRICE = DOWN_PAYMENT + TOTAL_REMAINING;
+const DOWN_PAYMENT = 6599500; // Adjusted for 18M Total
+const TOTAL_PRICE = DOWN_PAYMENT + TOTAL_REMAINING; // 18,000,000
 
 export const PROPERTY_DATA: PropertyDetails = {
   title: "Luxury Townhouse Middle - Stone Park",
@@ -61,7 +60,7 @@ export const PROPERTY_DATA: PropertyDetails = {
   installmentSchedule: INSTALLMENT_SCHEDULE,
   maintenanceSchedule: MAINTENANCE_SCHEDULE,
   contact: {
-    phone: "01004541000",
+    phone: "+201004541000",
     whatsapp: "201004541000",
     email: "darwiiish@yahoo.com"
   },
@@ -76,7 +75,6 @@ export const BROCHURE_URL = "./brochure.pdf";
 // 2. Place your screenshot files there and rename them to match the filenames below.
 // 3. Ensure paths start with ./images/
 export const INITIAL_IMAGES = [
-  "./data/cover-image.jpg", // Generated Cover
   "./data/gallery-1.jpg",
   "./data/gallery-2.jpg",
   "./data/gallery-3.jpg",
