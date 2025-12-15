@@ -66,6 +66,7 @@ const ContactSection: React.FC = () => {
               method="POST"
             >
               <input type="hidden" name="_subject" value="New Interest in Stone Park Townhouse" />
+              <input type="hidden" name="_next" value="https://ahdarwiiish.github.io/stone-park-for-sale-townhouse/thank-you.html" />
               {/* Optional: Add a redirect or auto-response config here if needed, e.g. <input type="hidden" name="_next" value="..." /> */}
 
               <div>
