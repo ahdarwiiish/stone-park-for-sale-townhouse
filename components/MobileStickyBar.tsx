@@ -3,6 +3,14 @@ import { Phone, MessageCircle } from 'lucide-react';
 import { PROPERTY_DATA } from '../constants';
 
 const MobileStickyBar: React.FC = () => {
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17808652172/CONVERSION_LABEL_HERE'
+      });
+    }
+  };
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] md:hidden">
       <div className="flex h-16">
@@ -17,6 +25,7 @@ const MobileStickyBar: React.FC = () => {
           href={`https://wa.me/${PROPERTY_DATA.contact.whatsapp}`}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={handleWhatsAppClick}
           className="flex-1 flex flex-col items-center justify-center bg-amber-600 text-white active:bg-amber-700"
         >
           <MessageCircle className="w-5 h-5 mb-1" />

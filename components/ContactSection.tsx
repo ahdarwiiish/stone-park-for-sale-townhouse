@@ -3,6 +3,14 @@ import { PROPERTY_DATA } from '../constants';
 import { Phone, Mail, MessageCircle } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
+  const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-17808652172/CONVERSION_LABEL_HERE'
+      });
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-slate-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -32,6 +40,7 @@ const ContactSection: React.FC = () => {
                 href={`https://wa.me/${PROPERTY_DATA.contact.whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={handleWhatsAppClick}
                 className="flex items-center p-6 bg-[#25D366]/10 border border-[#25D366]/20 rounded-xl hover:bg-[#25D366]/20 transition-colors group"
               >
                 <div className="bg-[#25D366] p-4 rounded-full mr-6 group-hover:scale-110 transition-transform">
