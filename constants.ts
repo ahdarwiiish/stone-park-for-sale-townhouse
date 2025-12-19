@@ -39,16 +39,16 @@ const DOWN_PAYMENT = 6599500; // Adjusted for 18M Total
 const TOTAL_PRICE = DOWN_PAYMENT + TOTAL_REMAINING; // 18,000,000
 
 export const PROPERTY_DATA: PropertyDetails = {
-  title: "Luxury Townhouse Middle - Stone Park",
-  projectPhase: "The Hills Willows Phase",
-  location: "Directly on Ring Road, New Cairo (Bahary)",
+  title: "Luxury Townhouse Middle - Stone Park Compound | تاون هاوس للبيع في ستون بارك",
+  projectPhase: "The Hills Willows Phase | مرحلة ذا هيلز",
+  location: "Directly on Ring Road, New Cairo, Egypt | على الطريق الدائري مباشرة، القاهرة الجديدة",
   bua: 190,
   land: 190,
   garden: 110,
   bedrooms: 3,
   bathrooms: 4,
-  finishing: "Core & Shell (Half Finishing)",
-  deliveryDate: "January 2027",
+  finishing: "Core & Shell (Half Finishing) | نصف تشطيب (محارة وحلوق)",
+  deliveryDate: "January 2027 | استلام يناير 2027",
   price: {
     total: TOTAL_PRICE,
     downPayment: DOWN_PAYMENT,
@@ -56,7 +56,7 @@ export const PROPERTY_DATA: PropertyDetails = {
     maintenance: TOTAL_MAINTENANCE,
     currency: "EGP"
   },
-  installmentPlan: "Quarterly installments till April 2031",
+  installmentPlan: "Quarterly installments till April 2031 | أقساط ربع سنوية حتى أبريل 2031",
   installmentSchedule: INSTALLMENT_SCHEDULE,
   maintenanceSchedule: MAINTENANCE_SCHEDULE,
   contact: {

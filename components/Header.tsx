@@ -6,10 +6,10 @@ const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: 'Details', href: '#details' },
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'Financials', href: '#financials' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Details | تفاصيل', href: '#details' },
+    { label: 'Gallery | المعرض', href: '#gallery' },
+    { label: 'Financials | الأسعار', href: '#financials' },
+    { label: 'Contact | تواصل', href: '#contact' },
   ];
 
   return (
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex flex-col">
               <span className="text-2xl font-bold font-serif text-slate-900 tracking-tight">STONE PARK</span>
-              <span className="text-xs text-amber-600 font-bold uppercase tracking-widest">The Hills Willows</span>
+              <span className="text-xs text-amber-600 font-bold uppercase tracking-widest">The Hills Willows | ذا هيلز</span>
             </a>
           </div>
 
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
               href={`tel:${PROPERTY_DATA.contact.phone}`}
               className="block w-full text-center mt-4 px-4 py-3 bg-amber-600 text-white font-bold rounded-lg"
             >
-              Call Now
+              Call Now | اتصل الآن
             </a>
           </div>
         </div>
