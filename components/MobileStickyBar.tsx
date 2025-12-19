@@ -6,7 +6,9 @@ const MobileStickyBar: React.FC = () => {
   const handleWhatsAppClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (typeof window !== 'undefined' && (window as any).gtag) {
       (window as any).gtag('event', 'conversion', {
-        'send_to': 'AW-17808652172/CONVERSION_LABEL_HERE'
+        'send_to': 'AW-17808652172/okKSCLeuqtQbEIzv6atC',
+        'value': 1.0,
+        'currency': 'EGP'
       });
     }
   };
